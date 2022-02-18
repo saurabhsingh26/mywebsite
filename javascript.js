@@ -22,3 +22,52 @@ for (var i = 0; i < navMenuAnchorTags.length; i++) {
         }, 20);
     });
 }
+
+
+
+// Auto fill skill bar
+
+
+
+
+var progressBars = document.querySelectorAll('.skill-progress > div');
+var skillContainer = document.getElementById('skill-container');
+window.addEventListener('scroll',checkScroll);
+var animationDone = false;
+
+function initialBars(){
+    for(let bar of progressBars){
+        bar.style.width = 0 + '%';
+    }
+}
+
+
+initialBars();
+
+function fillBars(){
+    for(let bar of progressBars){
+        let targetWidth = bar.getAttribute('data-bar-width');
+        let currentWidth = 0;
+        let intervalForFill = setInterval(function(){
+            if(currentWidth > targetWidth){
+                clearInterval(intervalForFill);
+                return;
+
+            }
+            currentWidth++;
+            bar.style.width = currentWidth + '%';
+        },10);
+    }
+}
+
+function checkScroll(){
+    var coordinates = skillContainer.getBoundingClientRect();
+    if(!animationDone && coordinates.top <= window.innerHeight){
+        animationDone = true;
+        console.log("skill section visible");
+        fillBars();
+    }else if(coordinates.top > window.innerHeight){
+        animationDone = false;
+        initialBars();
+    }
+}
