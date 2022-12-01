@@ -755,7 +755,7 @@ section:nth-child(2n + 1) {
     justify-content: space-around;
 }
 .image-container{
-    max-width: 300px;
+    max-width: 250px;
     overflow: hidden;
     margin: 30px;
     background-size: cover;
