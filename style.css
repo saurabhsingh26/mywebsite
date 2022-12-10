@@ -794,11 +794,11 @@ section:nth-child(2n + 1) {
     height: auto;
     padding-bottom: 3%;
 }
-/*portfolio*/
-#portfolio{
+/**/
+#projects{
     height: auto;
 }
-#projects{
+#project{
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
