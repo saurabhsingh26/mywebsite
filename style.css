@@ -554,9 +554,9 @@ section:nth-child(2n + 1) {
 .timeline-box:nth-child(2n){
     left: 53%;
 }
-.timeline-box:nth-child(2n+1){
-    /*left: 3%;*/
-}
+/* .timeline-box:nth-child(2n+1){
+    left: 3%;
+} */
 .timeline-box:nth-child(2n)::after{
     content: '';
     height: 15px;
@@ -586,6 +586,14 @@ section:nth-child(2n + 1) {
     position: absolute;
     left: 50%;
     top: 11%;
+}
+.certificate-traveller{
+    height: 83%;
+    width: 0px;
+    border: 1px dashed #0096fa6b;
+    position: absolute;
+    left: 50%;
+    top: 5%;
 }
 .moving-plane{
     position: sticky;
@@ -649,6 +657,15 @@ section:nth-child(2n + 1) {
         height: 66%;
         color: #433E3F;
     }
+    .certificate-traveller{
+        position: absolute;
+        width: 0;
+        top: 5%;
+        left: 9%;
+        border: 1px dashed #0096fa6b;
+        height: 82%;
+        color: #433E3F;
+    }
     
 
 }
@@ -707,13 +724,43 @@ section:nth-child(2n + 1) {
 .mb-blue {
     background-color: #2857a4;
 }
+.mb-brown {
+    background-color: #A52A2A;
+}
+.mb-burly {
+    background-color: #DEB887;
+}
+.mb-crimson {
+    background-color: #DC143C;
+}
+.mb-golden {
+    background-color: #B8860B;
+}
+.mb-darkgrey {
+    background-color: #A9A9A9;
+}
+.mb-darkseagreen {
+    background-color: #8FBC8F;
+}
+.mb-hotpink {
+    background-color: #FF69B4;
+}
+.mb-salmon{
+    background-color: #FA8072;
+}
+.mb-violet{
+    background-color: #EE82EE;
+}
+.mb-peach{
+    background-color: #6495ED	;
+}
 
 .mb-orange {
     background-color: #ec4d1c;
 }
 
 .mb-teal {
-    background-color: #0b8176;
+    background-color: #5F9EA0;
 }
 
 .mb-light-purple {
@@ -742,6 +789,11 @@ section:nth-child(2n + 1) {
     height: auto;
     padding-bottom: 3%;
 }
+/* certification */
+#certification{
+    height: auto;
+    padding-bottom: 3%;
+}
 /*portfolio*/
 #portfolio{
     height: auto;
@@ -755,7 +807,7 @@ section:nth-child(2n + 1) {
     justify-content: space-around;
 }
 .image-container{
-    max-width: 250px;
+    max-width: 200px;
     overflow: hidden;
     margin: 30px;
     background-size: cover;
@@ -796,5 +848,5 @@ section:nth-child(2n + 1) {
 
 .image-container:hover .portfolio-details {
     background-color: #80808078;
-    color: white;
+    color: #ffffff;
 }
