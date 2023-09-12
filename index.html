@@ -1,628 +1,721 @@
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta
-        name="description"
-        content="Saurabh Singh from Ayodhya."
-        />
-        <meta
-        name="keywords"
-        content="web development, frontend, react, javascript, portfolio, website, node, ayodhya, india"
-        />
-        <meta name="author" content="Saurabh Singh" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta property="og:title" content="Saurabh Singh" />
-        <meta property="og:url" content="index.html" />
-        <meta property="og:image" content="/images/profilepic2.jpg" />
-        <meta property="og:site_name" content="Saurabh Singh || A web developer" />
-        <meta
-        property="og:description"
-        content="Hi, I am Saurabh Singh from Ayodhya, I am a Software Engineer."
-        />
-        <title>Saurabh Singh || A Web Developer</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" type="image/png" href="images/profilepic2.jpg">
-    </head>
-    <body>
-        <header id="body-header">
-            
-            <nav>
-                <ul class="horizontal-list nav-menu">
-                    <li data-name="home"><a href="#">Home</a></li>
-                    <li data-name="about"><a href="#about">About</a></li>
-                    <li data-name="skills"><a href="#skills">Skills</a></li>
-                    <li data-name="experience"><a href="#experience">Experience</a></li>
-                    <li data-name="education"><a href="#education">Education</a></li>
-                    <li data-name="contact"><a href="#certification">Certification</a></li>
-                    <li data-name="portfolio"><a href="#projects">Projects</a></li>
-                    <li data-name="contact"><a href="#contact">Contact</a></li>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Saurabh Singh from Ayodhya." />
+    <meta
+      name="keywords"
+      content="web development, frontend, react, javascript, portfolio, website, node, ayodhya, india"
+    />
+    <meta name="author" content="Saurabh Singh" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:title" content="Saurabh Singh" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:image" content="/images/profilepic2.jpg" />
+    <meta property="og:site_name" content="Saurabh Singh || A web developer" />
+    <meta
+      property="og:description"
+      content="Hi, I am Saurabh Singh from Ayodhya, I am a Software Engineer."
+    />
+    <title>Saurabh Singh || A Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="images/profilepic2.jpg" />
+  </head>
+  <body>
+    <header id="body-header">
+      <nav>
+        <ul class="horizontal-list nav-menu">
+          <li data-name="home"><a href="#">Home</a></li>
+          <li data-name="about"><a href="#about">About</a></li>
+          <li data-name="skills"><a href="#skills">Skills</a></li>
+          <li data-name="experience"><a href="#experience">Experience</a></li>
+          <li data-name="education"><a href="#education">Education</a></li>
+          <li data-name="contact">
+            <a href="#certification">Certification</a>
+          </li>
+          <li data-name="portfolio"><a href="#projects">Projects</a></li>
+          <li data-name="contact"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-                </ul>
-            </nav>
+      <div id="dropdown">
+        <span id="menu-icon"><i class="fas fa-bars fa-lg"></i></span>
+        <div class="dropdown-menu nav-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certification">Certification</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
 
-            <div id="dropdown">
-                <span id="menu-icon"><i class="fas fa-bars fa-lg"></i></span>
-                <div class="dropdown-menu nav-menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#certification">Certification</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+      <div id="my-social-container">
+        <h1 id="name-header"><span class="auto-type"></span></h1>
+
+        <ul class="horizontal-list">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/saurabh-raj-singh"
+              target="_blank"
+              ><img
+                class="social-icon"
+                src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000015_1549330433_linkedin-logo.png"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/saurabhsingh26" target="_blank"
+              ><img class="social-icon" src="images/github.png"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank"
+              ><img
+                class="social-icon"
+                src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000014_1549330414_facebook-logo.png"
+            /></a>
+          </li>
+          <li>
+            <a href="https://swiggy-saurabh.vercel.app/" target="_blank"
+              ><img
+                class="social-icon"
+                style="height: 22px; width: 22px"
+                src="images/swiggy.png"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <div>
+          <img
+            id="profile-pic"
+            src="images/profilepic2.jpg"
+            alt="Profile Picture"
+          />
+        </div>
+        <div id="about-para">
+          <p>
+            <span class="text-highlight">Saurabh Singh</span> from
+            <span class="text-highlight">Ayodhya</span>, a self-starter with
+            strong interpersonal skills. Works efficiently both as an individual
+            contributor as well as along with a team. Seeking new challenges and
+            try to think out-of-the-box while looking for creative solutions to
+            a given problem. I'm also passionate about teaching the young minds
+            and get to know their thoughts and views on real world problems. I
+            believe in character, values, vision, and action. Quick learner, to
+            believe in learning from mistakes. I strongly feel that this virtue
+            will take me ahead in life and career.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h1 class="section-heading mb75px">
+          <span>
+            <i class="fas fa-chalkboard-teacher"></i>
+          </span>
+          <span> SKILLS </span>
+        </h1>
+
+        <div id="skill-container" class="skills-display">
+          <div class="skill-progress" data-tilt data-tilt-scale="1.2">
+            <div class="eighty-percent mb-salmon" data-bar-width="80">
+              <div class="skill-name">
+                <span> HTML </span>
+              </div>
             </div>
-            
-            <div id="my-social-container">
-                <h1 id="name-header"> <span class="auto-type"></span> </h1>
-
-                <ul class="horizontal-list">
-                    <li><a href="https://www.linkedin.com/in/saurabh-raj-singh" target="_blank"><img class="social-icon" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000015_1549330433_linkedin-logo.png"></a></li>
-                    <li><a href="https://github.com/saurabhsingh26" target="_blank"><img class="social-icon" src="images/github.png"></a></li>
-                    <li><a href="https://www.facebook.com" target="_blank"><img class="social-icon" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000014_1549330414_facebook-logo.png"></a></li>
-                    <li><a href="https://swiggy-saurabh.vercel.app/" target="_blank"><img class="social-icon" style="height: 22px; width: 22px;" src="images/swiggy.png"></a></li>
-                </ul>
+          </div>
+          <div class="skill-progress" data-tilt data-tilt-scale="1.2">
+            <div class="seventy-percent mb-burly" data-bar-width="70">
+              <div class="skill-name">
+                <span> CSS </span>
+              </div>
             </div>
-            
+          </div>
+          <div class="skill-progress" data-tilt data-tilt-scale="1.2">
+            <div class="eighty-percent mb-teal" data-bar-width="85">
+              <div class="skill-name">
+                <span> JavaScript </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress" data-tilt data-tilt-scale="1.2">
+            <div class="eighty-percent mb-violet" data-bar-width="80">
+              <div class="skill-name">
+                <span> Node.js </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress" data-tilt data-tilt-scale="1.2">
+            <div
+              class="eighty-five-percent mb-light-purple"
+              data-bar-width="85"
+            >
+              <div class="skill-name">
+                <span> Express </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress" data-tilt data-tilt-scale="1.2">
+            <div class="seventy-percent mb-violet" data-bar-width="70">
+              <div class="skill-name">
+                <span> Mongoose </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress" data-tilt data-tilt-scale="1.2">
+            <div class="seventy-percent mb-golden" data-bar-width="70">
+              <div class="skill-name">
+                <span> passportjs-auth </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress" data-tilt data-tilt-scale="1.2">
+            <div class="eighty-percent mb-salmon" data-bar-width="80">
+              <div class="skill-name">
+                <span> APIs </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress" data-tilt data-tilt-scale="1.2">
+            <div class="seventy-percent mb-orange" data-bar-width="70">
+              <div class="skill-name">
+                <span> MongoDB </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress" data-tilt data-tilt-scale="1.2">
+            <div
+              class="eighty-five-percent mb-darkseagreen"
+              data-bar-width="85"
+            >
+              <div class="skill-name">
+                <span> React </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress" data-tilt data-tilt-scale="1.2">
+            <div class="eighty-five-percent mb-hotpink" data-bar-width="85">
+              <div class="skill-name">
+                <span> Redux </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress" data-tilt data-tilt-scale="1.2">
+            <div class="eighty-five-percent mb-peach" data-bar-width="85">
+              <div class="skill-name">
+                <span> react-router-dom </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress" data-tilt data-tilt-scale="1.2">
+            <div class="eighty-five-percent mb-blue" data-bar-width="85">
+              <div class="skill-name">
+                <span> react-hooks </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress" data-tilt data-tilt-scale="1.2">
+            <div class="seventy-percent mb-peach" data-bar-width="70">
+              <div class="skill-name">
+                <span> Bootstrap </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress" data-tilt data-tilt-scale="1.2">
+            <div class="seventy-percent mb-darkgrey" data-bar-width="70">
+              <div class="skill-name">
+                <span> Git and Github </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress" data-tilt data-tilt-scale="1.2">
+            <div class="seventy-percent mb-brown" data-bar-width="70">
+              <div class="skill-name">
+                <span> Python </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        </header>
-
-        <main>
-            <section id="about">
-                
-                <div>
-                    <img id="profile-pic" src="images/profilepic2.jpg" alt="Profile Picture">
-                </div>
-                <div id="about-para">
-                    <p>
-                    <span class="text-highlight">Saurabh Singh</span> from <span class="text-highlight">Ayodhya</span>, 
-                    a self-starter with strong interpersonal skills. Works efficiently both as an individual contributor 
-                    as well as along with a team. Seeking new challenges and try to think out-of-the-box while looking 
-                    for creative solutions to a given problem. I'm also passionate about teaching the young minds and 
-                    get to know their thoughts and views on real world problems.  I believe in character, values, vision, 
-                    and action. Quick learner, to believe in learning from mistakes. I strongly feel that this virtue will 
-                    take me ahead in life and career.
-                </p>
-                </div>
-            </section>
-
-            <section id="skills">
-                <h1 class="section-heading mb75px ">
-                    <span>
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </span>
-                    <span> SKILLS </span>
-                </h1>
-
-            <div id="skill-container" class="skills-display">
-
-                
-                <div class="skill-progress" data-tilt data-tilt-scale="1.2">
-                    <div class="eighty-percent mb-salmon" data-bar-width = "80">
-                        <div class="skill-name">
-                            <span> HTML </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress" data-tilt data-tilt-scale="1.2">
-                    <div class="seventy-percent mb-burly" data-bar-width = "70">
-                        <div class="skill-name">
-                            <span> CSS </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress" data-tilt data-tilt-scale="1.2">
-                    <div class="eighty-percent mb-teal" data-bar-width = "85">
-                        <div class="skill-name">
-                            <span> JavaScript </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress" data-tilt data-tilt-scale="1.2">
-                    <div class="eighty-percent mb-violet" data-bar-width = "80">
-                        <div class="skill-name">
-                            <span> Node.js </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress" data-tilt data-tilt-scale="1.2">
-                    <div class="eighty-five-percent mb-light-purple" data-bar-width = "85">
-                        <div class="skill-name">
-                            <span> Express </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress" data-tilt data-tilt-scale="1.2">
-                    <div class="seventy-percent mb-violet" data-bar-width = "70">
-                        <div class="skill-name">
-                            <span> Mongoose </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress" data-tilt data-tilt-scale="1.2">
-                    <div class="seventy-percent mb-golden" data-bar-width = "70">
-                        <div class="skill-name">
-                            <span> passportjs-auth </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress" data-tilt data-tilt-scale="1.2">
-                    <div class="eighty-percent mb-salmon" data-bar-width = "80">
-                        <div class="skill-name">
-                            <span> APIs </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress" data-tilt data-tilt-scale="1.2">
-                    <div class="seventy-percent mb-orange" data-bar-width = "70">
-                        <div class="skill-name">
-                            <span> MongoDB </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress" data-tilt data-tilt-scale="1.2">
-                    <div class="eighty-five-percent mb-darkseagreen" data-bar-width = "85">
-                        <div class="skill-name">
-                            <span> React </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress" data-tilt data-tilt-scale="1.2">
-                    <div class="eighty-five-percent mb-hotpink" data-bar-width = "85">
-                        <div class="skill-name">
-                            <span> Redux </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress" data-tilt data-tilt-scale="1.2">
-                    <div class="eighty-five-percent mb-peach" data-bar-width = "85">
-                        <div class="skill-name">
-                            <span> react-router-dom </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress" data-tilt data-tilt-scale="1.2">
-                    <div class="eighty-five-percent mb-blue" data-bar-width = "85">
-                        <div class="skill-name">
-                            <span> react-hooks </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress" data-tilt data-tilt-scale="1.2">
-                    <div class="seventy-percent mb-peach" data-bar-width = "70">
-                        <div class="skill-name">
-                            <span> Bootstrap </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress" data-tilt data-tilt-scale="1.2">
-                    <div class="seventy-percent mb-darkgrey" data-bar-width = "70">
-                        <div class="skill-name">
-                            <span> Git and Github </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-progress" data-tilt data-tilt-scale="1.2">
-                    <div class="seventy-percent mb-brown" data-bar-width = "70">
-                        <div class="skill-name">
-                            <span> Python </span>
-                        </div>
-                    </div>
-                </div>
-
-
+      <section id="experience">
+        <h1 class="section-heading">
+          <span><i class="fas fa-briefcase"></i></span>
+          <span>Work Experience</span>
+        </h1>
+        <div class="timeline">
+          <div class="timeline-box">
+            <div class="info">
+              <div>
+                <img src="images/COG-Logo-2022.svg" />
+              </div>
+              <div>
+                <h3 class="designation m0 m-blue">Programmer Analyst</h3>
+                <h4 class="company">Cognizant</h4>
+                <h4 class="duration m0">November 2021 - Present</h4>
+              </div>
             </div>
 
-            </section>
+            <p class="description">
+              Cognizant is one of the world's leading professional services
+              companies, transforming clients' business, operating and
+              technology models for the digital era. Headquartered in the U.S.,
+              Cognizant is ranked 194 on the Fortune 500 and is consistently
+              listed among the most admired companies in the world.
+            </p>
+          </div>
 
+          <div class="timeline-box">
+            <div class="info">
+              <div>
+                <img src="images/internshala.svg" />
+              </div>
+              <div>
+                <h3 class="designation m0 m-blue">
+                  Internshala Student Partner
+                </h3>
+                <h4 class="company">Internshala</h4>
+                <h4 class="duration m0">September 2020 - November 2020</h4>
+              </div>
+            </div>
 
-            <section id="experience">
-                <h1 class="section-heading">
-                    <span><i class="fas fa-briefcase"></i></span>
-                    <span>Work Experience</span>
-                </h1>
-                <div class="timeline">
-                    <div class="timeline-box">
-                        <div class="info">
-                            <div>
-                                <img src="images/COG-Logo-2022.svg">
-                            </div>
-                            <div>
-                                <h3 class="designation m0 m-blue">Programmer Analyst</h3>
-                                <h4 class="company">Cognizant</h4>
-                                <h4 class="duration m0">November 2021 - Present</h4>
-                            </div></div>
-                        
-                        <p class="description">Cognizant is one of the world's leading professional services companies, transforming clients' business, operating and technology models for the digital era. Headquartered in the U.S., Cognizant is ranked 194 on the Fortune 500 and is consistently listed among the most admired companies in the world.</p>
-                    </div>
-                    
-                    <div class="timeline-box">
-                        <div class="info">
-                            <div>
-                                <img src="images/internshala.svg">
-                            </div>
-                            <div>
-                                <h3 class="designation m0 m-blue">Internshala Student Partner</h3>
-                                <h4 class="company">Internshala</h4>
-                                <h4 class="duration m0">September 2020 - November 2020 </h4>
-                            </div></div>
-                        
-                        <p class="description">Internshala Student Partner team is the biggest strength when it comes to educating college students across the world about the power of internships and online trainings. Creating awareness about Internshala internships and Motivating students to go online training.</p>
-                    </div>
-                    <div class="timeline-box">
-                        <div class="info">
-                            <div>
-                                <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
-                            </div>
-                            <div>
-                                <h3 class="designation m0 m-blue">Teaching Assistant </h3>
-                                <h4 class="company">Coding Ninjas</h4>
-                                <h4 class="duration m0">July 2020 - November 2020</h4>
-                            </div></div>
-                        
-                        <p class="description">A teacher assistant works under a teacher’s supervision to give students additional attention and instruction. Key responsibilities  - Taking doubt sessions, Debugging codes and helping students in their assignments & various projects.</p>
-                    </div>
-                    
-                    <div class="traveller">
-                        <div class="moving-plane">
-                            <i class="fas fa-plane fa-1x"></i>
-                        </div>
-                    </div>
+            <p class="description">
+              Internshala Student Partner team is the biggest strength when it
+              comes to educating college students across the world about the
+              power of internships and online trainings. Creating awareness
+              about Internshala internships and Motivating students to go online
+              training.
+            </p>
+          </div>
+          <div class="timeline-box">
+            <div class="info">
+              <div>
+                <img
+                  src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png"
+                />
+              </div>
+              <div>
+                <h3 class="designation m0 m-blue">Teaching Assistant</h3>
+                <h4 class="company">Coding Ninjas</h4>
+                <h4 class="duration m0">July 2020 - November 2020</h4>
+              </div>
+            </div>
+
+            <p class="description">
+              A teacher assistant works under a teacher’s supervision to give
+              students additional attention and instruction. Key
+              responsibilities - Taking doubt sessions, Debugging codes and
+              helping students in their assignments & various projects.
+            </p>
+          </div>
+
+          <div class="traveller">
+            <div class="moving-plane">
+              <i class="fas fa-plane fa-1x"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <h1 class="section-heading">
+          <span><i class="fas fa-graduation-cap"></i></span>
+          <span>Education</span>
+        </h1>
+        <div class="timeline">
+          <div class="timeline-box">
+            <div class="info">
+              <div>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2602/2602432.png"
+                />
+              </div>
+              <div>
+                <h3 class="designation m0 m-blue">SSC</h3>
+                <h4 class="company">
+                  Gayatri Vidya Mandir Inter College Ayodhya
+                </h4>
+                <h5 class="duration m0">2003 - 2013</h5>
+              </div>
+            </div>
+
+            <p class="description">
+              A school is an educational institution designed to provide
+              learning spaces and learning environments for the teaching of
+              students under the direction of teachers.
+            </p>
+          </div>
+          <div class="timeline-box">
+            <div class="info">
+              <div>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2602/2602432.png"
+                />
+              </div>
+              <div>
+                <h3 class="designation m0 m-blue">HSC</h3>
+                <h4 class="company">D B S Inter College Ayodhya</h4>
+                <h5 class="duration m0">2013 - 2015</h5>
+              </div>
+            </div>
+
+            <p class="description">
+              A school is an educational institution designed to provide
+              learning spaces and learning environments for the teaching of
+              students under the direction of teachers.
+            </p>
+          </div>
+          <div class="timeline-box">
+            <div class="info">
+              <div>
+                <img src="images/akgec.png" />
+              </div>
+              <div>
+                <h3 class="designation m0 m-blue">
+                  Electronics And Communication Engineering
+                </h3>
+                <h4 class="company">AKGEC</h4>
+                <h5 class="duration m0">2017 - 2021</h5>
+              </div>
+            </div>
+            <p class="description">
+              Ajay Kumar Garg Engineering College is an engineering college
+              located in Ghaziabad, Uttar Pradesh, India. The college was
+              established in 1998. It is affiliated to Dr. A.P.J. Abdul Kalam
+              Technical University, Lucknow.
+            </p>
+          </div>
+          <div class="traveller">
+            <div class="moving-plane"><i class="fas fa-plane fa-1x"></i></div>
+          </div>
+        </div>
+      </section>
+      <section id="certification">
+        <h1 class="section-heading">
+          <span><i class="fas fa-graduation-cap"></i></span>
+          <span>Certification</span>
+        </h1>
+        <div class="timeline">
+          <div class="timeline-box">
+            <div class="info">
+              <div>
+                <img
+                  src="https://iconarchive.com/download/i87095/graphicloads/colorful-long-shadow/Html-tags.ico"
+                />
+              </div>
+              <div>
+                <h3 class="designation m0 m-blue">
+                  Front End | Full Stack Web Development
+                </h3>
+                <h4 class="company">Coding Ninjas</h4>
+              </div>
+            </div>
+
+            <p class="description">
+              Front-end web development is the development of the graphical user
+              interface of a website, through the use of HTML, CSS, and
+              JavaScript, so that users can view and interact with that website.
+            </p>
+          </div>
+          <div class="timeline-box">
+            <div class="info">
+              <div>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"
+                />
+              </div>
+              <div>
+                <h3 class="designation m0 m-blue">
+                  Back End | Full Stack Web Development in Node.js
+                </h3>
+                <h4 class="company">Coding Ninjas</h4>
+              </div>
+            </div>
+
+            <p class="description">
+              Back-end development means working on server-side software, which
+              focuses on everything you can’t see on a website. Back-end
+              developers ensure the website performs correctly, focusing on
+              databases, back-end logic, application programming interface
+              (APIs), architecture, and servers.
+            </p>
+          </div>
+          <div class="timeline-box">
+            <div class="info">
+              <div>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png"
+                />
+              </div>
+              <div>
+                <h3 class="designation m0 m-blue">
+                  Advance Front-End Web Development with React - Full Stack
+                </h3>
+                <h4 class="company">Coding Ninjas</h4>
+              </div>
+            </div>
+            <p class="description">
+              React is a JavaScript-based UI development library. React uses
+              Virtual DOM, thereby creating web applications faster. Virtual DOM
+              compares the components’ previous states and updates only the
+              items in the Real DOM that were changed, instead of updating all
+              of the components again, as conventional web applications do.
+            </p>
+          </div>
+          <div class="timeline-box">
+            <div class="info">
+              <div>
+                <img
+                  src="https://learn.microsoft.com/en-us/media/learn/certification/badges/certification-exam.svg"
+                />
+              </div>
+              <div>
+                <h3 class="designation m0 m-blue">
+                  Dynamics 365 Fundamentals (CRM)
+                </h3>
+                <h4 class="company">Microsoft</h4>
+              </div>
+            </div>
+
+            <p class="description">
+              Understand the core capabilities across the Dynamic 365 customer
+              engagement apps.
+            </p>
+          </div>
+          <div class="timeline-box">
+            <div class="info">
+              <div>
+                <img
+                  src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg"
+                />
+              </div>
+              <div>
+                <h3 class="designation m0 m-blue">
+                  Power Platform Fundamentals
+                </h3>
+                <h4 class="company">Microsoft</h4>
+              </div>
+            </div>
+
+            <p class="description">
+              Microsoft Power Platform is a line of business intelligence, app
+              development, and app connectivity software applications. Microsoft
+              developed the Power Fx low-code programming language for
+              expressing logic across the Power Platform.
+            </p>
+          </div>
+          <div class="timeline-box">
+            <div class="info">
+              <div>
+                <img
+                  src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg"
+                />
+              </div>
+              <div>
+                <h3 class="designation m0 m-blue">
+                  Power Platform Functional Consultant Associate
+                </h3>
+                <h4 class="company">Microsoft</h4>
+              </div>
+            </div>
+
+            <p class="description">
+              Microsoft Power Platform is a line of business intelligence, app
+              development, and app connectivity software applications. Microsoft
+              developed the Power Fx low-code programming language for
+              expressing logic across the Power Platform.
+            </p>
+          </div>
+
+          <div class="certificate-traveller">
+            <div class="moving-plane"><i class="fas fa-plane fa-1x"></i></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h1 class="section-heading">
+          <span><i class="fas fa-th-list"></i></span>
+          <span>Projects</span>
+        </h1>
+        <div id="project-container">
+          <div class="image-container">
+            <img class="project-pic" src="/images/swiggy2.png" />
+            <div class="link-container">
+              <a
+                href="https://github.com/saurabhsingh26/HungryHub"
+                target="_blank"
+              >
+                <div class="button-class">
+                  <img src="/images/github.png" alt="github" />
+                  <p>Github</p>
                 </div>
-            </section>
-
-
-
-            <section id="education">
-                <h1 class="section-heading">
-                    <span><i class="fas fa-graduation-cap"></i></span>
-                    <span>Education</span>
-                </h1>
-                <div class="timeline">
-                    <div class="timeline-box">
-                        <div class="info">
-                            <div>
-                                <img src="https://cdn-icons-png.flaticon.com/512/2602/2602432.png">
-                            </div>
-                            <div>
-                                <h3 class="designation m0 m-blue"> SSC </h3>
-                                <h4 class="company">Gayatri Vidya Mandir Inter College Ayodhya</h4>
-                                <h5 class="duration m0">2003 - 2013</h5>
-                                
-                            </div></div>
-                        
-                        <p class="description">A school is an educational institution designed to provide learning spaces and learning environments for the teaching of students under the direction of teachers.</p>
-                    </div>
-                    <div class="timeline-box">
-                        <div class="info">
-                            <div>
-                                <img src="https://cdn-icons-png.flaticon.com/512/2602/2602432.png">
-                            </div>
-                            <div>
-                                <h3 class="designation m0 m-blue">HSC</h3>
-                                <h4 class="company">D B S Inter College Ayodhya</h4>
-                                <h5 class="duration m0">2013 - 2015</h5>
-                                
-                            </div>
-                        </div>
-                        
-                        <p class="description">A school is an educational institution designed to provide learning spaces and learning environments for the teaching of students under the direction of teachers.</p>
-                    </div>
-                    <div class="timeline-box">
-                        <div class="info">
-                            <div>
-                                <img src="images/akgec.png">
-                            </div>
-                            <div>
-                                <h3 class="designation m0 m-blue"> Electronics And Communication Engineering
-                                    </h3>
-                                <h4 class="company">AKGEC</h4>
-                                <h5 class="duration m0">2017 - 2021</h5>
-                            </div>
-                            
-                        </div>
-                                <p class="description">Ajay Kumar Garg Engineering College is an engineering college located in Ghaziabad, Uttar Pradesh, India. The college was established in 1998. It is affiliated to Dr. A.P.J. Abdul Kalam Technical University, Lucknow.</p>  
-                    </div>
-                    <div class="traveller">
-                        <div class="moving-plane"><i class="fas fa-plane fa-1x"></i></div>
-                    </div>
+              </a>
+              <a href="https://swiggy-saurabh.vercel.app/" target="_blank">
+                <div class="button-class">
+                  <img src="/images/view.png" alt="live" />
+                  <p>Live</p>
                 </div>
-            </section>
-            <section id="certification">
-                <h1 class="section-heading">
-                    <span><i class="fas fa-graduation-cap"></i></span>
-                    <span>Certification</span>
-                </h1>
-                <div class="timeline">
-                    <div class="timeline-box">
-                        <div class="info">
-                            <div>
-                                <img src="https://iconarchive.com/download/i87095/graphicloads/colorful-long-shadow/Html-tags.ico">
-                            </div>
-                            <div>
-                                <h3 class="designation m0 m-blue"> Front End | Full Stack Web Development</h3>
-                                <h4 class="company">Coding Ninjas</h4>
-                                
-                            </div></div>
-                        
-                        <p class="description">Front-end web development is the development of the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website.</p>
-                    </div>
-                    <div class="timeline-box">
-                        <div class="info">
-                            <div>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png">
-                            </div>
-                            <div>
-                                <h3 class="designation m0 m-blue">Back End | Full Stack Web Development in Node.js</h3>
-                                <h4 class="company">Coding Ninjas</h4>
-                                
-                            </div>
-                        </div>
-                        
-                        <p class="description">Back-end development means working on server-side software, which focuses on everything you can’t see on a website. Back-end developers ensure the website performs correctly, focusing on databases, back-end logic, application programming interface (APIs), architecture, and servers.</p>
-                    </div>
-                    <div class="timeline-box">
-                        <div class="info">
-                            <div>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png">
-                            </div>
-                            <div>
-                                <h3 class="designation m0 m-blue">Advance Front-End Web Development with React - Full Stack</h3>
-                                <h4 class="company">Coding Ninjas</h4>
-                            </div>
-                            
-                        </div>
-                        <p class="description">React is a JavaScript-based UI development library. React uses Virtual DOM, thereby creating web applications faster. Virtual DOM compares the components’ previous states and updates only the items in the Real DOM that were changed, instead of updating all of the components again, as conventional web applications do.</p>  
-                    </div>
-                    <div class="timeline-box">
-                        <div class="info">
-                            <div>
-                                <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/certification-exam.svg">
-                            </div>
-                            <div>
-                                <h3 class="designation m0 m-blue"> Dynamics 365 Fundamentals (CRM)</h3>
-                                <h4 class="company">Microsoft</h4>
-                                
-                            </div></div>
-                        
-                        <p class="description">Understand the core capabilities across the Dynamic 365 customer engagement apps.</p>
-                    </div>
-                    <div class="timeline-box">
-                        <div class="info">
-                            <div>
-                                <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg">
-                            </div>
-                            <div>
-                                <h3 class="designation m0 m-blue"> Power Platform Fundamentals</h3>
-                                <h4 class="company">Microsoft</h4>
-                                
-                            </div></div>
-                        
-                        <p class="description">Microsoft Power Platform is a line of business intelligence, app development, and app connectivity software applications. Microsoft developed the Power Fx low-code programming language for expressing logic across the Power Platform.</p>
-                    </div>
-                    <div class="timeline-box">
-                        <div class="info">
-                            <div>
-                                <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg">
-                            </div>
-                            <div>
-                                <h3 class="designation m0 m-blue"> Power Platform Functional Consultant Associate </h3>
-                                <h4 class="company">Microsoft</h4>
-                                
-                            </div></div>
-                        
-                        <p class="description">Microsoft Power Platform is a line of business intelligence, app development, and app connectivity software applications. Microsoft developed the Power Fx low-code programming language for expressing logic across the Power Platform.</p>
-                    </div>
-                
-                    <div class="certificate-traveller">
-                        <div class="moving-plane"><i class="fas fa-plane fa-1x"></i></div>
-                    </div>
+              </a>
+            </div>
+          </div>
+          <div class="image-container">
+            <img class="project-pic" src="/images/netflix.png" />
+            <div class="link-container">
+              <a
+                href="https://github.com/saurabhsingh26/Netflix-GPT"
+                target="_blank"
+              >
+                <div class="button-class">
+                  <img src="/images/github.png" alt="github" />
+                  <p>Github</p>
                 </div>
-            </section>
-
-
-            <section id="projects">
-                <h1 class="section-heading">
-                    <span><i class="fas fa-th-list"></i></span>
-                    <span>Projects</span>
-                </h1>
-                <div id="project">
-                    <div class="image-container" data-tilt data-tilt-scale="1.2">
-                        <img class="project-pic" src="https://cdn-icons-png.flaticon.com/512/5390/5390126.png">
-                        <div class="portfolio-details">
-                            <p>
-                                Baby Monitoring Smart Cradle
-                            </p>
-                        </div>
-
-                    </div>
-                    <div data-tilt data-tilt-scale="1.2" class="image-container">
-                        <img  src="https://cdn-icons-png.flaticon.com/512/2387/2387679.png">
-                        <div class="portfolio-details">
-                            <p>
-                                Todo App - JavaScript
-                            </p>
-                        </div>
-                    </div>
-                    <div class="image-container" data-tilt data-tilt-scale="1.2">
-                        <img  src="https://cdn-icons-png.flaticon.com/512/2918/2918148.png">
-                        <div class="portfolio-details">
-                            <p>
-                                Meals App - JavaScript
-                            </p>
-                        </div>
-                    </div>
-                    <div class="image-container" data-tilt data-tilt-scale="1.2">
-                        <img  src="https://cdn-icons-png.flaticon.com/512/7465/7465425.png">
-                        <div class="portfolio-details">
-                            <p>
-                                Issue Tracker App
-                            </p>
-                        </div>
-                    </div>
-                    <div class="image-container" data-tilt data-tilt-scale="1.2">
-                        <img  src="https://cdn-icons-png.flaticon.com/512/7376/7376466.png">
-                        <div class="portfolio-details">
-                            <p>
-                                Employee Review System
-                            </p>
-                        </div>
-                    </div>
-                    <div class="image-container" data-tilt data-tilt-scale="1.2">
-                        <img  src="https://cdn-icons-png.flaticon.com/512/1806/1806299.png">
-                        <div class="portfolio-details">
-                            <p>
-                                Hospital API Nodejs
-                            </p>
-                        </div>
-                    </div>
-                    <div class="image-container" data-tilt data-tilt-scale="1.2">
-                        <img  src="https://cdn-icons-png.flaticon.com/512/1162/1162499.png">
-                        <div class="portfolio-details">
-                            <p>
-                                Ecommerce API
-                            </p>
-                        </div>
-                    </div>
-                    <div class="image-container" data-tilt data-tilt-scale="1.2">
-                        <img  src="https://cdn-icons-png.flaticon.com/512/2593/2593653.png">
-                        <div class="portfolio-details">
-                            <p>
-                                Contact List Using Node.js
-                            </p>
-                        </div>
-                    </div>
-                    <div class="image-container" data-tilt data-tilt-scale="1.2">
-                        <img  src="https://cdn-icons-png.flaticon.com/512/3762/3762131.png">
-                        <div class="portfolio-details">
-                            <p>
-                                Trip Planner App
-                            </p>
-                        </div>
-                    </div>
-                    <div class="image-container" data-tilt data-tilt-scale="1.2">
-                        <img  src="https://cdn-icons-png.flaticon.com/512/548/548353.png">
-                        <div class="portfolio-details">
-                            <p>
-                                React Calculator
-                            </p>
-                        </div>
-                    </div>
-                    <div class="image-container" data-tilt data-tilt-scale="1.2">
-                        <img  src="images/cart.png">
-                        <div class="portfolio-details">
-                            <p>
-                                Shopping Cart Using React
-                            </p>
-                        </div>
-                    </div>
-                    <div class="image-container" data-tilt data-tilt-scale="1.2">
-                        <img  src="https://cdn-icons-png.flaticon.com/512/1388/1388662.png">
-                        <div class="portfolio-details">
-                            <p>
-                                Blog App Using React
-                            </p>
-                        </div>
-                    </div>
-                    <div class="image-container" data-tilt data-tilt-scale="1.2">
-                        <img  src="https://cdn-icons-png.flaticon.com/512/1358/1358994.png">
-                        <div class="portfolio-details">
-                            <p>
-                                Album Collection
-                            </p>
-                        </div>
-                    </div>
-                    <div class="image-container" data-tilt data-tilt-scale="1.2">
-                        <img  src="https://cdn-icons-png.flaticon.com/512/5026/5026374.png">
-                        <div class="portfolio-details">
-                            <p>
-                                Habit tracking app
-                            </p>
-                        </div>
-                    </div>
-                    <div class="image-container" data-tilt data-tilt-scale="1.2">
-                        <img  src="https://cdn-icons-png.flaticon.com/512/4712/4712803.png">
-                        <div class="portfolio-details">
-                            <p>
-                                Social Media App - iConnect
-                            </p>
-                        </div>
-                    </div>
-                    <div class="image-container" data-tilt data-tilt-scale="1.2">
-                        <img  src="images/Chatting Engine.png">
-                        <div class="portfolio-details">
-                            <p>
-                                Chatting App using sockets.io
-                            </p>
-                        </div>
-                    </div>
+              </a>
+              <a href="https://netflixgpt-saurabh.vercel.app/">
+                <div class="button-class">
+                  <img src="/images/view.png" alt="live" />
+                  <p>Live</p>
                 </div>
-            </section>
-            
+              </a>
+            </div>
+          </div>
+          <div class="image-container">
+            <img class="project-pic" src="/images/iconnect.png" />
+            <div class="link-container">
+              <a href="https://github.com/saurabhsingh26/iconnect-react-app">
+                <div class="button-class">
+                  <img src="/images/github.png" alt="github" />
+                  <p>Github</p>
+                </div>
+              </a>
+              <a href="https://iconnect-saurabh.vercel.app/">
+                <div class="button-class">
+                  <img src="/images/view.png" alt="live" />
+                  <p>Live</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <section id="contact">
-                <h1 class= "section-heading">
-                    <span><i class="far fa-id-card"></i></span>
-                    <span>Contact</span>
-                </h1>
-                <div id="contact-details">
-                    <div id="message">
-                        <form action="https://formspree.io/f/xdojqqwl" method="POST">
-                            <input type="text" name="name" placeholder="Your Name" autocomplete="off" required>
-                            <input type="email" name="email" placeholder="Your Email" autocomplete="off" required>
-                            <textarea rows="5" placeholder="Message" name="message" autocomplete="off" required></textarea>
-                            <button type="submit">SUBMIT</button>
-                        </form>
-                    </div>
-                    <div id="address">
-                        <h3>Get In touch</h3>
-                        <h2>My Address</h2>
-                        <div class="my-details-info-container">
-                            <span><i class="fas fa-map-marker-alt"></i></span>
-                            <span>Ayodhya, India</span>
-                        </div>
-                        <div class="my-details-info-container">
-                            <span><i class="fas fa-mobile-alt"></i></span>
-                            <span>+91__________</span>
-                        </div>
-                        <div class="my-details-info-container">
-                            <span><i class="fas fa-envelope"></i></span>
-                            <span>contact@saurabhsingh.tech</span>
-                        </div>
-                        <div class="my-details-info-container">
-                        <span><i class="far fa-envelope"></i></span>
-                        <span>Have any Suggestions ? Feel free to contact</span>
-                    </div>
-                    </div>
-                </div>
-                <div id="my-social-container">
-                    <ul class="horizontal-list">
-                        <li><a href="https://www.linkedin.com/in/saurabh-raj-singh" target="_blank"><img class="social-icon" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000015_1549330433_linkedin-logo.png"></a></li>
-                        <li><a href="https://github.com/saurabhsingh26" target="_blank"><img class="social-icon" src="images/github.png"></a></li>
-                        <li><a href="https://stackoverflow.com" target="_blank"><img class="social-icon" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000022_1549822879_stackoverflow-logo.png"></a></li>
-                        <li><a href="https://www.facebook.com" target="_blank"><img class="social-icon" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000014_1549330414_facebook-logo.png"></a></li>
-                    
-                    </ul>
-                </div>
-            </section>
-            
-        </main>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script>
-            var typed = new Typed('.auto-type',{
-                strings:["Saurabh Singh","Ayodhya Vasi","Programmer Analyst at Cognizant","MERN Stack Developer"],
-                typeSpeed: 70,
-                backSpeed: 50,
-                loop: true,
-            })
-            </script>
-        <script type="text/javascript" src="javascript.js" ></script>
-        <script type="text/javascript" src="vanilla-tilt.js"></script>
-    </body>
-    </html> 
+      <section id="contact">
+        <h1 class="section-heading">
+          <span><i class="far fa-id-card"></i></span>
+          <span>Contact</span>
+        </h1>
+        <div id="contact-details">
+          <div id="message">
+            <form action="https://formspree.io/f/xdojqqwl" method="POST">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                autocomplete="off"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                autocomplete="off"
+                required
+              />
+              <textarea
+                rows="5"
+                placeholder="Message"
+                name="message"
+                autocomplete="off"
+                required
+              ></textarea>
+              <button type="submit">SUBMIT</button>
+            </form>
+          </div>
+          <div id="address">
+            <h3>Get In touch</h3>
+            <h2>My Address</h2>
+            <div class="my-details-info-container">
+              <span><i class="fas fa-map-marker-alt"></i></span>
+              <span>Ayodhya, India</span>
+            </div>
+            <div class="my-details-info-container">
+              <span><i class="fas fa-mobile-alt"></i></span>
+              <span>+91__________</span>
+            </div>
+            <div class="my-details-info-container">
+              <span><i class="fas fa-envelope"></i></span>
+              <span>contact@saurabhsingh.tech</span>
+            </div>
+            <div class="my-details-info-container">
+              <span><i class="far fa-envelope"></i></span>
+              <span>Have any Suggestions ? Feel free to contact</span>
+            </div>
+          </div>
+        </div>
+        <div id="my-social-container">
+          <ul class="horizontal-list">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/saurabh-raj-singh"
+                target="_blank"
+                ><img
+                  class="social-icon"
+                  src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000015_1549330433_linkedin-logo.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://github.com/saurabhsingh26" target="_blank"
+                ><img class="social-icon" src="images/github.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://stackoverflow.com" target="_blank"
+                ><img
+                  class="social-icon"
+                  src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000022_1549822879_stackoverflow-logo.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" target="_blank"
+                ><img
+                  class="social-icon"
+                  src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000014_1549330414_facebook-logo.png"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: [
+          "Saurabh Singh",
+          "Ayodhya Vasi",
+          "Programmer Analyst at Cognizant",
+          "MERN Stack Developer",
+        ],
+        typeSpeed: 70,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+    <script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+  </body>
+</html>
