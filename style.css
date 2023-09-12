@@ -816,26 +816,26 @@ section:nth-child(2n + 1) {
   width: 100%;
   margin-top: 5px;
 }
-.link-container a{
-    text-decoration: none;
+.link-container a {
+  text-decoration: none;
 }
-.button-class{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: linear-gradient(to right,#a2ccb6 0%,#ee786e 100%);
-    padding: 0px 5px;
-    border-radius: 10px;
-    width: 100px;
+.button-class {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(to right, #a2ccb6 0%, #ee786e 100%);
+  padding: 0px 5px;
+  border-radius: 10px;
+  width: 100px;
 }
-.button-class img{
-    width: 20px;
-    height: 20px;
+.button-class img {
+  width: 20px;
+  height: 20px;
 }
-.button-class p{
-    font-size: 15px;
-    color: whitesmoke;
-    font-weight: bold;
+.button-class p {
+  font-size: 15px;
+  color: whitesmoke;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
@@ -844,6 +844,19 @@ section:nth-child(2n + 1) {
   }
   .link-container {
     width: 90%;
+  }
+  .button-class {
+    padding: 0px 1px;
+    border-radius: 10px;
+    width: 70px;
+  }
+  .button-class img {
+    width: 15px;
+    height: 15px;
+  }
+  .button-class p {
+    font-size: 10px;
+    color: whitesmoke;
   }
 }
 @media screen and (max-width: 1024px) {
